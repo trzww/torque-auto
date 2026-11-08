@@ -12,9 +12,9 @@
   0%,100%{box-shadow:0 8px 35px rgba(0,0,0,.3),0 0 0 0 rgba(232,91,42,0)}
   50%{box-shadow:0 8px 35px rgba(0,0,0,.3),0 0 0 7px rgba(232,91,42,.09)}
 }
-.brand-logo{animation:torque-logo-aura 5s ease-in-out infinite}
+.brand-logo{animation:none;filter:none}
 .hero-title em{animation:torque-headline-light 7s ease-in-out infinite}
 .floating-wa{animation:torque-wa-breathe 4.5s ease-in-out infinite}
 @media(prefers-reduced-motion:reduce){
-  .brand-logo,.hero-title em,.floating-wa{animation:none!important}
+  .hero-title em,.floating-wa{animation:none!important}
 }

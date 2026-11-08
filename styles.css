@@ -18,3 +18,24 @@
 @media(prefers-reduced-motion:reduce){
   .hero-title em,.floating-wa{animation:none!important}
 }
+
+
+/* Mobile directions layout: keep the address and directions action together */
+@media(max-width:720px){
+  .contact-detail:nth-child(2){
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    column-gap:14px;
+    row-gap:10px;
+    align-items:end;
+  }
+  .contact-detail:nth-child(2)>span{grid-column:1/-1}
+  .contact-detail:nth-child(2)>p{grid-column:1;grid-row:2}
+  .contact-detail:nth-child(2)>.detail-link{
+    grid-column:2;
+    grid-row:2;
+    align-self:end;
+    white-space:nowrap;
+    padding-bottom:2px;
+  }
+}
